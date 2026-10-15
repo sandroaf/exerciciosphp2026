@@ -1,0 +1,23 @@
+main {
+    display: flexbox;
+    width: 90%;
+    margin: 10px auto;
+}
+
+header {
+    display: flexbox;
+    width: 100%;
+}
+
+
+article {
+    display: flexbox;
+}
+
+dl {
+    margin: 10px 5px 10px 15px;
+}
+
+dt {
+    font-weight: bolder;
+}
