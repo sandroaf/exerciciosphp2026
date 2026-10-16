@@ -28,14 +28,14 @@
             $mail->Host       = 'smtp.sendgrid.net';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
             $mail->Username   = 'apikey';                     //SMTP username
-            //$mail->Password   = 'secret';                               //SMTP password
+            //$mail->Password   = 'secret'; 
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
             $mail->setFrom($de, $denome);
             $mail->addAddress($para);     //Add a recipient
-            $mail->addReplyTo($para);
+            $mail->addReplyTo($de);
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = $assunto;

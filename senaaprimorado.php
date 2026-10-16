@@ -31,7 +31,7 @@
                 $sena = array();
                 while (count($sena) < 6) {
                     $nro = rand(0,60);
-                    if (!array_search("nro",$sena)) {
+                    if (!array_search($nro,$sena)) {
                         array_push($sena, $nro);
                         echo $nro.(count($sena)==6?"":", ");
                     }
